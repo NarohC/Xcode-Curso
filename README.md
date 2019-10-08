@@ -1,3 +1,3 @@
 # Xcode-Curso
 
-Aprtendiendo a usar XCode
+Aprendiendo a usar XCode
