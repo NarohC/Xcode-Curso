@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cuenta" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="La cuenta es de..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QCk-X4-V3S">
+                                <rect key="frame" x="138" y="71" width="139" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="vMQ-I8-Wit"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6zK-f1-KIk">
+                                <rect key="frame" x="138" y="113" width="140" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="88A-zb-0bN"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="10%"/>
+                                    <segment title="20%"/>
+                                    <segment title="30%"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5CH-Ci-f7K">
+                                <rect key="frame" x="159" y="152" width="96" height="51"/>
+                                <state key="normal" title="Aceptar"/>
+                                <connections>
+                                    <action selector="calcularTotal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J3o-Hl-lwP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total a Pagar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7m1-Sp-Dp6">
+                                <rect key="frame" x="153" y="200" width="105" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QCk-X4-V3S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0pm-vs-H5H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7m1-Sp-Dp6" secondAttribute="bottom" constant="614" id="1El-d4-L2S"/>
+                            <constraint firstItem="QCk-X4-V3S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="5Jz-Vt-XtV"/>
+                            <constraint firstItem="5CH-Ci-f7K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="159" id="7gn-QS-xrA"/>
+                            <constraint firstItem="5CH-Ci-f7K" firstAttribute="top" secondItem="6zK-f1-KIk" secondAttribute="bottom" constant="8" id="Khn-iq-Gmi"/>
+                            <constraint firstItem="QCk-X4-V3S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="Lpp-WM-UcK"/>
+                            <constraint firstItem="5CH-Ci-f7K" firstAttribute="leading" secondItem="7m1-Sp-Dp6" secondAttribute="leading" constant="6" id="MjN-vh-hPI"/>
+                            <constraint firstItem="6zK-f1-KIk" firstAttribute="top" secondItem="QCk-X4-V3S" secondAttribute="bottom" constant="8" id="ap5-fg-q0t"/>
+                            <constraint firstItem="QCk-X4-V3S" firstAttribute="centerX" secondItem="5CH-Ci-f7K" secondAttribute="centerX" id="cJi-jB-az4"/>
+                            <constraint firstItem="6zK-f1-KIk" firstAttribute="centerX" secondItem="7m1-Sp-Dp6" secondAttribute="centerX" constant="2.5" id="fqi-DB-cby"/>
+                            <constraint firstItem="QCk-X4-V3S" firstAttribute="leading" secondItem="6zK-f1-KIk" secondAttribute="leading" id="i9e-kx-raW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5CH-Ci-f7K" secondAttribute="bottom" constant="659" id="lI5-Cw-nht"/>
+                            <constraint firstItem="QCk-X4-V3S" firstAttribute="centerX" secondItem="6zK-f1-KIk" secondAttribute="centerX" id="tRK-7g-HKA"/>
+                            <constraint firstItem="7m1-Sp-Dp6" firstAttribute="top" secondItem="6zK-f1-KIk" secondAttribute="bottom" constant="56" id="v3E-sm-9Nx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelTotal" destination="7m1-Sp-Dp6" id="7Jm-CH-80n"/>
+                        <outlet property="porcentaje" destination="6zK-f1-KIk" id="pWR-Wj-KRL"/>
+                        <outlet property="textfieldCuenta" destination="QCk-X4-V3S" id="WVY-u2-4md"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
