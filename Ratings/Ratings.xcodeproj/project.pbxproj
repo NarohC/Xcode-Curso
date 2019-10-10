@@ -17,6 +17,8 @@
 		B5480293234FB71200FBCF48 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5480292234FB71200FBCF48 /* Player.swift */; };
 		B5480295234FB74300FBCF48 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5480294234FB74300FBCF48 /* SampleData.swift */; };
 		B548029B234FD01F00FBCF48 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B548029A234FD01F00FBCF48 /* PlayerCell.swift */; };
+		B548029D234FE10300FBCF48 /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B548029C234FE10300FBCF48 /* PlayerDetailsViewController.swift */; };
+		B548029F234FF5A700FBCF48 /* GamePickerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B548029E234FF5A700FBCF48 /* GamePickerTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		B5480292234FB71200FBCF48 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		B5480294234FB74300FBCF48 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		B548029A234FD01F00FBCF48 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		B548029C234FE10300FBCF48 /* PlayerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsViewController.swift; sourceTree = "<group>"; };
+		B548029E234FF5A700FBCF48 /* GamePickerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePickerTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				B548027E234FADEF00FBCF48 /* SceneDelegate.swift */,
 				B5480280234FADEF00FBCF48 /* ViewController.swift */,
 				B5480282234FADEF00FBCF48 /* Main.storyboard */,
+				B548029E234FF5A700FBCF48 /* GamePickerTableViewController.swift */,
+				B548029C234FE10300FBCF48 /* PlayerDetailsViewController.swift */,
 				B5480292234FB71200FBCF48 /* Player.swift */,
 				B5480294234FB74300FBCF48 /* SampleData.swift */,
 				B5480290234FB65100FBCF48 /* PlayersViewController.swift */,
@@ -152,6 +158,8 @@
 			files = (
 				B5480281234FADEF00FBCF48 /* ViewController.swift in Sources */,
 				B5480295234FB74300FBCF48 /* SampleData.swift in Sources */,
+				B548029D234FE10300FBCF48 /* PlayerDetailsViewController.swift in Sources */,
+				B548029F234FF5A700FBCF48 /* GamePickerTableViewController.swift in Sources */,
 				B548029B234FD01F00FBCF48 /* PlayerCell.swift in Sources */,
 				B5480291234FB65100FBCF48 /* PlayersViewController.swift in Sources */,
 				B548027D234FADEF00FBCF48 /* AppDelegate.swift in Sources */,
