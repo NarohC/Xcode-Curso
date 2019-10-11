@@ -91,6 +91,8 @@ class ViewController: UIViewController {
         }
 
     }
+    
+    
 
 }
 
@@ -111,10 +113,19 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == UITableViewCell.EditingStyle.delete {
-            people.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+        
+        if editingStyle == .delete {
+            let persona = people[indexPath.row]
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+                return
+            }
+            let managedContext = appDelegate.persistentContainer.viewContext
+            self.people.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            managedContext.delete(persona)
+            appDelegate.saveContext()
         }
+        
     }
     
     
